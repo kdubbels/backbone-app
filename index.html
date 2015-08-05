@@ -14,7 +14,19 @@
       <img src="images/site/logo.png" width="207" height="124" alt="Hansel and Petal" />
     </div>
 
+<div id="allFlowers"></div>
+<div id="copy"></div>
+
   </div>  
+
+  <script id="flowerElement" type="text/template">
+    <a href="#<%= link %>"><img src="<%= img %>" alt="<%= name %>" class="image" /></a>
+    <ul>
+      <li class="flowerInfo">Name:<%= name %></li>
+      <li class="flowerInfo">Price:<%= price %></li>
+      <li class="flowerInfo">Color:<%= color %></li>
+    </ul>
+  </script>
 
   <script src="js/libs/jquery.js"></script>
   <script src="js/libs/underscore.js"></script>

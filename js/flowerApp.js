@@ -16,7 +16,7 @@ var rainbowRoses = new app.singleFlower({
 var heirloomRoses = new app.singleFlower({
   name: "Heirloom roses",
   price: 19.95,
-  img: "images/heirloomRoses.jpg",
+  img: "images/heirloomPinkRoses.jpg",
   link: "heirloomRose"
 });
 
@@ -31,3 +31,8 @@ var flowerGroup = new app.FlowersCollection([
 ]);
 
 console.log(flowerGroup.toJSON());
+
+
+var flowerGroupView = new app.allFlowersView({ collection: flowerGroup});
+
+$("#allFlowers").html(flowerGroupView.render().el);
